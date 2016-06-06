@@ -4,7 +4,7 @@
 
 
 #include <iostream>
-#include <windows.h>
+#include <windows.h> // windows tool only, used to add color
 #include <string>
 #include <algorithm>
 #include <stdio.h>
@@ -20,6 +20,7 @@ void welcome();
 void bunny();
 void credits();
 
+//necessary to add color to console
 WORD GetConsoleTextAttribute (HANDLE hCon)
 {
   CONSOLE_SCREEN_BUFFER_INFO con_info;
