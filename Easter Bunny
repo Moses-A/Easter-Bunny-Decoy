@@ -1,7 +1,5 @@
-// Easter Bunny
+// Easter Bunny Code
 // Moses Arocha
-// I hope you Like THIS!!
-
 
 #include <iostream>
 #include <windows.h> // windows tool only, used to add color
@@ -84,9 +82,8 @@ void bunny()
 	cout << "\n     \\..  |_.======._|  ../   ";
 	cout << "\n      '---'          '---'   ";
 
-	
-	
 }
+
 void credits()
 {
 	cout << "\n\t Hello. \n\n"
