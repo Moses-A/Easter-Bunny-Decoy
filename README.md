@@ -1,2 +1,2 @@
 # Happy-Easter
-An Easter Bunny with color! Written in C++
+Written in C++, this Easter Bunny has color and can be used as a distraction to infect the victim's computer.
