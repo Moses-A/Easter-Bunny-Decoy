@@ -1,4 +1,4 @@
-// Easter Bunny Code
+// Code that displays a Command Line Easter Bunny
 // Moses Arocha
 
 #include <iostream>
@@ -32,7 +32,7 @@ const int saved_colors = GetConsoleTextAttribute(hConsole);
 
 void welcome()
 {
-	cout << "\t\t\t Hello! Welcome To The Amazing Bunny!\n";
+    cout << "\t\t\t Hello! Welcome To The Amazing Bunny!\n";
 }
 
 void bunny()
@@ -86,9 +86,9 @@ void bunny()
 
 void credits()
 {
-	cout << "\n\t Hello. \n\n"
-		 << " The Credits Of This Project Are Towards Caleb Whiddon And Matthew Soudah.\n"
-		 << " Of Course, This Is My Code, But They Help Tremendously.\n\n";
+    cout << "\n\t Hello. \n\n"
+   	 << " The Credits Of This Project Are Towards Caleb Whiddon And Matthew Soudah.\n"
+	 << " Of Course, This Is My Code, But They Help Tremendously.\n\n";
 }
 
 int main()
@@ -98,55 +98,55 @@ int main()
 
 	while (exit == 0)
 	{
-		SetConsoleTextAttribute(hConsole, 0x0D);
-		cout << "\n\t\t HAPPY EASTER! I HOPE YOU HAVE A GREAT DAY! ";
-		SetConsoleTextAttribute(hConsole, 0x09);
-		cout << "\n _____________________________________________________________________________ ";
-		SetConsoleTextAttribute(hConsole, 0x0C);
-		cout << "\n\n\t\t [1] Display The Amazing Bunny ";
-		SetConsoleTextAttribute(hConsole, 0x0E);
-		cout << "\n\t\t [2] Credits Of The Project ";
-		SetConsoleTextAttribute(hConsole, 0x0A);
-		cout << "\n\t\t [3] Exit ";
-		SetConsoleTextAttribute(hConsole, 0x0B);
-		cout << "\n Choice: ";
-		SetConsoleTextAttribute(hConsole, 0x03);
-		cin >> choice;
+	    SetConsoleTextAttribute(hConsole, 0x0D);
+	    cout << "\n\t\t HAPPY EASTER! I HOPE YOU HAVE A GREAT DAY! ";
+	    SetConsoleTextAttribute(hConsole, 0x09);
+	    cout << "\n _____________________________________________________________________________ ";
+	    SetConsoleTextAttribute(hConsole, 0x0C);
+	    cout << "\n\n\t\t [1] Display The Amazing Bunny ";
+	    SetConsoleTextAttribute(hConsole, 0x0E);
+	    cout << "\n\t\t [2] Credits Of The Project ";
+	    SetConsoleTextAttribute(hConsole, 0x0A);
+	    cout << "\n\t\t [3] Exit ";
+	    SetConsoleTextAttribute(hConsole, 0x0B);
+	    cout << "\n Choice: ";
+	    SetConsoleTextAttribute(hConsole, 0x03);
+	    cin >> choice;
 
 		switch(choice)
 		{
-			case 1:
-				system("cls");
-				welcome();
-				bunny();
-				cin.ignore();
-				cin.get();
-				system("cls");
-				break;
+		    case 1:
+			system("cls");
+			welcome();
+			bunny();
+			cin.ignore();
+			cin.get();
+			system("cls");
+			break;
 
-			case 2:
-				system("cls");
-				credits();
-				cin.ignore();
-				cin.get();
-				system("cls");
-				break;
+		    case 2:
+			system("cls");
+			credits();
+			cin.ignore();
+			cin.get();
+			system("cls");
+			break;
 
-			case 3:
-				exit = 1;
-				cout << "\n\n\n";
-				break;
+		    case 3:
+			exit = 1;
+			cout << "\n\n\n";
+			break;
 
-			default:
-				cout << "\n\n\n Invalid Selection. Press A Key To Return To Main Menu. ";
-				cin.ignore();
-				cin.get();
-				system("cls");
+		    default:
+			cout << "\n\n\n Invalid Selection. Press A Key To Return To Main Menu. ";
+			cin.ignore();
+			cin.get();
+			system("cls");
 		}
 
 		if (exit == 1)					//Exit flag is set-break the loop)
 		{	break;    }
 
 	}
-	return 0;
+    return 0;
 }
